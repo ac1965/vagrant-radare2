@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Updates
-sudo pacman -Syu
-sudo pacman -S cmake
+sudo pacman -Syyu 
+sudo pacman -S cmake --noconfirm
 
 
 git clone --depth=1 https://github.com/radareorg/radare2 && (cd radare2 && ./sys/install.sh)
